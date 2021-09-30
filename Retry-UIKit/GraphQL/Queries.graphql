@@ -1,0 +1,22 @@
+
+query getTestList{
+TestList{
+  issues
+  _id
+  files
+  DetailedReport
+  timeStamp
+  __typename
+}
+  }
+
+
+
+
+query TestDetails($id: String!){
+  Test(id: $id){
+    _id
+    files
+    timeStamp
+  }
+}
